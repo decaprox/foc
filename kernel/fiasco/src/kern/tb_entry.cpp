@@ -107,6 +107,7 @@ struct Tb_entry_empty : public Tb_entry
 class Tb_entry_formatter
 {
 public:
+  Tb_entry_formatter() { }
   typedef Tb_entry::Group_order Group_order;
 
   virtual unsigned print(Tb_entry const *e, int max, char *buf) const = 0;

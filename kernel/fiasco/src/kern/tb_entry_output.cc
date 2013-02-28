@@ -141,6 +141,7 @@ tag_interpreter_snprintf(char *&buf, int &maxlen, L4_msg_tag const &tag)
 class Tb_entry_ipc_fmt : public Tb_entry_formatter
 {
 public:
+  Tb_entry_ipc_fmt() { }
   unsigned print(Tb_entry const *, int, char *) const { return 0; }
   Group_order has_partner(Tb_entry const *) const
   { return Tb_entry::Group_order::first(); }
@@ -157,6 +158,7 @@ public:
 class Tb_entry_ipc_res_fmt : public Tb_entry_formatter
 {
 public:
+  Tb_entry_ipc_res_fmt() { }
   unsigned print(Tb_entry const *, int, char *) const { return 0; }
   Group_order has_partner(Tb_entry const *) const
   { return Tb_entry::Group_order::last(); }
